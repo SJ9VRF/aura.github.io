@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Aura</title>
+<style>
+  :root {
+    --bg: #f4efe8;
+    --paper: #fbf7f1;
+    --text: #111;
+    --muted: #6b645d;
+    --line: rgba(17,17,17,0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Baskerville", "Times New Roman", serif;
+    padding: 48px 20px 72px;
+  }
+
+  .page {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+
+  .brand {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .back {
+    text-decoration: none;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+    padding-bottom: 2px;
+  }
+
+  .hero {
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 0.98;
+    margin-bottom: 18px;
+  }
+
+  .hero p {
+    font-size: 19px;
+    line-height: 1.9;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--line);
+    background: #efe8de;
+  }
+
+  .card-body {
+    padding: 28px 26px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .card h2 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 1.08;
+  }
+
+  .card p {
+    font-size: 17px;
+    line-height: 1.82;
+    color: #222;
+  }
+
+  .footer-note {
+    margin-top: 50px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 920px) {
+    body {
+      padding: 28px 16px 48px;
+    }
+
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 34px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    .hero p,
+    .card p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .project-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .project-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding-bottom: 2px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">AURA</div>
+      <div class="nav-links">
+        <a class="back" href="index.html">Back to Home</a>
+        <a class="back" href="work.html">Explore Works</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="eyebrow">Selected Projects</div>
+      <h1>Explore Projects</h1>
+      <p>
+        A curated project page featuring selected systems across multimodal AI,
+        world modeling, agentic workflows, robotics, communication, information
+        verification, and reinforcement learning.
+      </p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-body">
+          <div class="label">Alignment · Agents · Autonomy</div>
+          <h2>Sentinel Alignment Lab</h2>
+          <p>
+            A research-driven agent framework for evaluating and shaping the behavior
+            of advanced multimodal systems under high-stakes conditions. The project
+            focuses on misalignment detection, failure-mode discovery, deceptive or
+            goal-drifting behaviors, reflective self-correction, and structured
+            oversight through multi-agent evaluation loops.
+          </p>
+          <p>
+            Designed to align closely with frontier safety and agents work, it combines
+            agentic reasoning, evaluator agents, tool use, and robustness-focused
+            testing to study how capable systems can remain steerable, reliable, and
+            decision-safe in real-world environments.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="label">Embodied Alignment · Agents · Autonomy</div>
+          <h2>Embodied Alignment WorldMaker</h2>
+          <p>
+            An embodied AI system focused on alignment in multi-agent environments,
+            where autonomous agents interact within shared physical and simulated
+            worlds. The project explores how alignment emerges and fails when multiple
+            agents coordinate, compete, and act over long horizons.
+          </p>
+          <p>
+            Combines multimodal world models spanning vision, language, 3D, and action
+            with multi-agent reinforcement learning, enabling agents to reason about
+            other agents, maintain coherent goals, and operate under alignment
+            constraints in dynamic environments.
+          </p>
+          <p>
+            Designed to study embodied alignment, agent interaction dynamics, and
+            decision reliability in settings where perception, action, and coordination
+            are tightly coupled.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">World Modeling</div>
+          <h2>Realator</h2>
+          <p>
+            A simulator for world model building that integrates foundation models
+            with reinforcement learning to simulate and predict real-world scenarios,
+            learn environmental dynamics, and support adaptive decision-making.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Communication Systems</div>
+          <h2>Call</h2>
+          <p>
+            A communication tunnel between agents designed for secure and
+            interpretable information exchange, improving collaboration,
+            decision-making, safety, and iterative alignment to human goals.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Robotics</div>
+          <h2>Helping-Hands</h2>
+          <p>
+            Uses vision-language models to interpret structured assembly maps for
+            robots in long-horizon tasks, converting visual assembly steps into
+            textual instructions that support consistent robotic execution.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Diffusion Models</div>
+          <h2>DiffuNet</h2>
+          <p>
+            Applies diffusion models to neural architecture design by learning a
+            reverse denoising process that generates diverse, structured candidates
+            while meeting performance and scalability constraints.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Vision · Action · Language</div>
+          <h2>ActPix2Pix</h2>
+          <p>
+            Integrates vision-action-language models with foundation models and
+            reinforcement learning for agentic workflows, including scene synthesis,
+            world dynamics learning, and decision optimization.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">LLMs for Robotics</div>
+          <h2>TaskMasters</h2>
+          <p>
+            Uses large language models to improve robotic task execution by refining
+            command clarity from state and language inputs through RLHF, fine-tuning,
+            and task-specific instruction generation.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Multimodal Learning</div>
+          <h2>MM4WM</h2>
+          <p>
+            Combines multimodal perception learning, aligned embeddings, foundation
+            model training, and reinforcement learning to support physically grounded,
+            context-aware adaptive agent performance.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Latent World Models</div>
+          <h2>BindingWorldModel</h2>
+          <p>
+            Constructs coherent world models by binding visual, textual, and sensor
+            information into unified latent representations through cross-modal
+            attention and latent-space alignment.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Reinforcement Learning</div>
+          <h2>TransReward</h2>
+          <p>
+            Explores multi-robot, multi-task transfer through reward compensation and
+            reinforcement learning, enabling scalable policy adaptation across
+            changing dynamics, morphologies, and resource constraints.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Advertising AI</div>
+          <h2>AdFlux Engine</h2>
+          <p>
+            A foundation-model-driven advertising simulator that predicts user
+            behavior from historical data and uses multimodal modeling, NLP, RL,
+            and RLHF to optimize placement and engagement.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Verification</div>
+          <h2>TruthSeeker LLMs</h2>
+          <p>
+            A multimodal information-verification system combining pretrained LLMs
+            and vision transformers with trusted-source checking, confidence
+            estimation, and feedback-driven refinement for misinformation detection.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+
+      <article class="card">
+        
+        <div class="card-body">
+          <div class="label">Multi-Agent LLMs</div>
+          <h2>LLM Communicators</h2>
+          <p>
+            Develops a RAG-based communication tunnel across heterogeneous language
+            models, enabling iterative reasoning, targeted questioning, validation,
+            and consensus-driven synthesis through collaborative interaction.
+          </p>
+        
+<div class="project-links">
+  <a href="#">GitHub</a>
+  <a href="#">Introductory Media</a>
+  <a href="#">Report</a>
+</div>
+
+        </div>
+      </article>
+    </div>
+
+    <div class="footer-note">New York City · San Francisco</div>
+  </div>
+</body>
+</html>

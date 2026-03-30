@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects & Research — Aura</title>
+<style>
+  :root {
+    --bg: #f4efe8;
+    --paper: #fbf7f1;
+    --text: #111;
+    --muted: #6b645d;
+    --line: rgba(17,17,17,0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Baskerville", "Times New Roman", serif;
+    padding: 48px 20px 72px;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+
+  .brand {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .back {
+    text-decoration: none;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+    padding-bottom: 2px;
+  }
+
+  .hero {
+    max-width: 870px;
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 0.98;
+    margin-bottom: 18px;
+  }
+
+  .hero p {
+    font-size: 19px;
+    line-height: 1.9;
+  }
+
+  .section {
+    margin-top: 42px;
+  }
+
+  .section-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 30px 28px;
+    min-height: 300px;
+  }
+
+  .card h2 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 1.08;
+    margin-bottom: 14px;
+  }
+
+  .card p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #222;
+  }
+
+  .card p + p {
+    margin-top: 14px;
+  }
+
+  .footer-note {
+    margin-top: 50px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 920px) {
+    body {
+      padding: 28px 16px 48px;
+    }
+
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 34px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    .hero p,
+    .card p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      min-height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">AURA</div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;"><a class="back" href="index.html">Back to Home</a><a class="back" href="projects.html">Explore Projects</a></div>
+    </div>
+
+    <div class="hero">
+      <div class="eyebrow">Projects & Research</div>
+      <h1>Selected Work,<br>Research, and Leadership</h1>
+      <p>
+        A research-positioning page built around multimodal AI, alignment,
+        agentic systems, robotics, reinforcement learning, and scientific
+        execution across frontier research and real-world deployment.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Flagship Research Themes</div>
+      <div class="grid">
+        <div class="card">
+          <h2>Multimodal Foundation Models</h2>
+          <p>
+            Research on generalizable multimodal foundation models spanning 3D,
+            vision, language, and action, with emphasis on real-time perception,
+            dynamic interaction, world modeling, robotic control, and scalable
+            learning from large offline datasets.
+          </p>
+          <p>
+            This work is grounded in building systems that move beyond static
+            prediction toward embodied reasoning, perception, and action in
+            environments that demand generalization and reliability.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Alignment</h2>
+          <p>
+            Research spanning multimodal alignment, reflective self-play,
+            communication-driven capability shaping, and safer deployment of
+            advanced AI systems. Focus areas include failure-mode analysis,
+            robustness, steerability, oversight, and evaluation of misalignment
+            risk under real-world conditions.
+          </p>
+          <p>
+            This includes work relevant to high-stakes settings where reliability,
+            interpretability, cultural sensitivity, and structured feedback matter
+            for making powerful models more governable and trustworthy.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Autonomy and Agents</h2>
+          <p>
+            Designed and built agentic systems operating across multimodal inputs
+            with capabilities in reasoning, planning, tool use, memory, retrieval,
+            and long-horizon task execution. Work includes adaptive agent
+            frameworks, structured reasoning, OpenAPI-based tool orchestration,
+            and software interaction.
+          </p>
+          <p>
+            These systems are aimed at complex workflows where models must act
+            over multiple steps, use external tools, navigate interfaces, and
+            maintain reliable decision structure over time.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Embodied AI and Robotics</h2>
+          <p>
+            Work across robot learning, manipulation, causal learning, failure
+            detection, sim-to-real transfer, and action-aligned perception and
+            control. Research includes long-horizon assembly, multimodal task
+            representation, and reinforcement learning for robotic behavior.
+          </p>
+          <p>
+            The emphasis is on systems that combine language, vision, 3D, and
+            action to support more adaptive physical intelligence.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Selected Experience</div>
+      <div class="grid">
+        <div class="card">
+          <h2>Google</h2>
+          <p>
+            Led a 20-member multidisciplinary team across research, ML
+            engineering, infrastructure, data science, and product to design and
+            deploy a multimodal agentic advertising system from concept to
+            production.
+          </p>
+          <p>
+            Developed reinforcement learning methods for advertisement
+            optimization in collaboration with Google Research, implemented
+            teacher–student distillation pipelines for feedback-efficient learning,
+            and mentored engineers on research design, experimentation, and
+            publication development.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Microsoft</h2>
+          <p>
+            Developed vision–language–action foundation models for world modeling
+            and multimodal reasoning, enabling autonomous agents to interact with
+            real software environments such as Copilot interfaces and Xbox systems.
+          </p>
+          <p>
+            Introduced reinforcement-based self-play reasoning for autonomous UI
+            navigation and contributed to patents on multimodal reasoning and
+            interface navigation agents, alongside diffusion-based 3D generation
+            work for game environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Amazon</h2>
+          <p>
+            Worked on LLM training, evaluation, multimodal modeling, and
+            recommendation experiences aimed at improving product understanding
+            and customer decision-making.
+          </p>
+          <p>
+            Contributed to modular representation learning and multimodal
+            pretraining directions connected to scaling laws and large industry
+            datasets.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Mercedes-Benz Research</h2>
+          <p>
+            Focused on world modeling and multimodal embodied AI for autonomous
+            driving settings, including spatial reasoning, hierarchical planning,
+            simulation realism, and long-horizon action planning.
+          </p>
+          <p>
+            Led generative simulation efforts for parking and drive-through
+            applications, integrating action tokenization and retrieval-augmented
+            generation to improve context-aware decision-making.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>UC Davis</h2>
+          <p>
+            Leading research on scalable multimodal foundation models integrating
+            3D, vision, language, and action for real-time perception and dynamic
+            interaction, alongside reinforcement learning, causal learning, robot
+            manipulation, task scheduling with LLMs and RAG, and failure detection.
+          </p>
+          <p>
+            Also led research teams spanning PhD, master’s, undergraduate, and
+            visiting researchers, while contributing to medical AI, greenhouse
+            automation, ADHD analysis, and other applied machine learning projects.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>UC Berkeley</h2>
+          <p>
+            Conducted exchange research in computer science with focus on
+            multimodal alignment, LLM and multi-agent systems, reward transfer,
+            and multimodal foundation model directions.
+          </p>
+          <p>
+            Participated in Berkeley AI entrepreneurship programming through the
+            BAIR summer entrepreneur environment, connecting frontier research,
+            commercialization thinking, and translational innovation around
+            advanced AI systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Stanford University</h2>
+          <p>
+            Contributed to research collaboration on large-scale robot interaction
+            datasets and robot generalization, including point-cloud misalignment
+            error quantization and language annotation embedding.
+          </p>
+          <p>
+            Led entrepreneurship work in Stanford’s technology entrepreneurship
+            environment, building generative product concepts, shaping early-stage
+            venture direction, and leading an international team spanning
+            entrepreneurship, investment, software, and machine learning.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Y Combinator</h2>
+          <p>
+            Participated in Startup School as a solo builder in an intensive founder environment
+            focused on refining product direction, business models, and early-stage
+            startup execution.
+          </p>
+          <p>
+            This complemented ongoing work at the intersection of research,
+            commercialization, and AI product building.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>California Transportation</h2>
+          <p>
+            Built machine learning systems for ADA ramp compliance and highway
+            safety applications using point clouds, image processing, vehicle
+            detection, license plate recognition, make-and-model recognition, and
+            targeted warning generation.
+          </p>
+          <p>
+            Worked with cross-functional engineering and transportation teams on
+            safety-focused, deployment-relevant computer vision systems.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects and Applied Systems</div>
+      <div class="grid">
+        <div class="card">
+          <h2>OpenAI Hackathon Projects</h2>
+          <p>
+            Built AI applications leveraging OpenAI models for reasoning, coding,
+            multimodal understanding, and task automation. Projects included
+            Certify for multimodal reasoning and fact-checking, and OperAI for
+            planning, reinforcement learning, and productivity-oriented task
+            management.
+          </p>
+          <p>
+            Explored meta prompting, chain-of-thought design, tool calling,
+            multi-agent orchestration, retrieval augmentation, and lightweight
+            fine-tuning for domain-specific agent behavior.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Founding and Startup Work</h2>
+          <p>
+            Founded and built systems including Sudsaz for stock prediction with
+            news analysis, Dana for information verification across media sources,
+            and Sina for medical question answering and diagnostic support.
+          </p>
+          <p>
+            These projects reflect a long-standing interest in moving research
+            ideas into useful systems with product and societal relevance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Retrieval, Ads, and Ranking</h2>
+          <p>
+            Built ads-related retrieval using search and user history, developed
+            RL-based reward systems from human feedback for app-store advertising,
+            and improved click performance and item-matching quality through
+            applied ML, ranking, and retrieval methods.
+          </p>
+          <p>
+            This work connects information retrieval, recommendation, user
+            behavior, and optimization in revenue-critical production settings.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Teaching and Applied Leadership</h2>
+          <p>
+            Served as Head Teaching Assistant leading 20 teams of MBA students on
+            machine learning projects with industry partners including Atlassian,
+            American Eagle Airlines, Qualcomm, and financial anomaly-detection use
+            cases.
+          </p>
+          <p>
+            The work combined technical oversight, project management, and
+            translation of machine learning methods into practical business impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Publications, Patents, and Recognition</div>
+      <div class="grid">
+        <div class="card">
+          <h2>Publications</h2>
+          <p>
+            Publications and submissions across NeurIPS, ICML workshops, RSS,
+            ICRA, ophthalmology venues, and interdisciplinary research forums
+            spanning multimodal learning, robotics, communication-driven LLM
+            capabilities, medical AI, information verification, and structured
+            reasoning.
+          </p>
+          <p>
+            Representative work includes HealthAlign-Agents, DROID, Open
+            X-Embodiment, multimodal robotic learning, and ongoing research on
+            video reasoning, WorldBind, and action-aligned perception.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Patents and Intellectual Property</h2>
+          <p>
+            Contributed technical innovation disclosures and patent-related work
+            spanning advertising systems, agentic AI architectures, multimodal
+            reasoning, and autonomous interface navigation.
+          </p>
+          <p>
+            This work reflects a consistent emphasis on translating frontier ideas
+            into protectable technical innovation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Awards and Recognition</h2>
+          <p>
+            Recipient of multiple competitive awards including ICRA Best Paper
+            Award, Oxford Machine Learning Summer School awards, AAAI and NeurIPS
+            travel awards, TAPIA recognition, Grace Hopper awards, ACM Student
+            Research Competition finalist recognition, and international machine
+            learning competition honors.
+          </p>
+          <p>
+            Recognition also includes second place in the Autonomous Greenhouses
+            International Machine Learning Challenge among 46 teams, reflecting
+            strong applied performance in competitive settings.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Academic Service</h2>
+          <p>
+            Served as reviewer and program committee contributor across major
+            journals and research venues, including top machine learning venues
+            such as NeurIPS and ICML, alongside broader interdisciplinary service.
+          </p>
+          <p>
+            This service sits alongside mentorship, research leadership, and
+            contribution to the broader scientific community.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Leadership and Training</div>
+      <div class="grid">
+        <div class="card">
+          <h2>Leadership Development</h2>
+          <p>
+            Built leadership experience across research, engineering, and
+            cross-functional execution through a combination of hands-on team
+            direction and formal training in project leadership, agile delivery,
+            stakeholder communication, and structured execution.
+          </p>
+          <p>
+            This development sits alongside leading research agendas, mentoring
+            researchers, coordinating interdisciplinary teams, and operating across
+            both academic and production-facing AI environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Leadership & Execution</h2>
+          <p>
+            Leadership experience across industry, research, and teaching
+            environments, including directing a 20-member multidisciplinary team at
+            Google and leading 20 MBA project teams comprising more than 100 professionals on applied machine learning work with industry partners.
+          </p>
+          <p>
+            Additional experience includes leading a robotics research team across
+            PhD, master’s, undergraduate, and visiting researchers, mentoring
+            graduate and undergraduate students, and guiding complex projects that
+            required coordination across research, engineering, infrastructure, data
+            science, and product functions.
+          </p>
+          <p>
+            This practical leadership is complemented by formal training in project
+            leadership, agile execution, stakeholder communication, and structured
+            delivery through Google’s Project Management program.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">New York City · San Francisco</div>
+  </div>
+</body>
+</html>

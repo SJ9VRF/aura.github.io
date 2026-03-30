@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Arts — Aura</title>
+<style>
+  :root {
+    --bg: #f4efe8;
+    --paper: #fbf7f1;
+    --text: #111;
+    --muted: #6b645d;
+    --line: rgba(17,17,17,0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Baskerville", "Times New Roman", serif;
+    padding: 48px 20px 72px;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+
+  .brand {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .back {
+    text-decoration: none;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+    padding-bottom: 2px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .hero-panel,
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+  }
+
+  .hero-panel {
+    padding: 34px 32px;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .eyebrow,
+  .label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 0.95;
+    margin-bottom: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.85;
+    max-width: 520px;
+  }
+
+  .hero-quote {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .hero-note {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #222;
+  }
+
+  .section-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 18px 0 16px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 22px;
+    margin-top: 18px;
+  }
+
+  .card {
+    padding: 30px 28px;
+  }
+
+  .card h2 {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.06;
+    margin-bottom: 14px;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 1.88;
+    color: #222;
+  }
+
+  .card p + p {
+    margin-top: 14px;
+  }
+
+  .statement {
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+
+  .mini-block {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-note {
+    margin-top: 48px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 960px) {
+    body {
+      padding: 28px 16px 48px;
+    }
+
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 34px;
+    }
+
+    .hero,
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+    }
+
+    .hero-quote {
+      font-size: 28px;
+    }
+
+    .card p,
+    .hero-subtitle,
+    .hero-note {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">AURA</div>
+      <div class="nav-links">
+        <a class="back" href="index.html">Back to Home</a>
+        <a class="back" href="work.html">Explore Works</a>
+        <a class="back" href="projects.html">Explore Projects</a>
+        <a class="back" href="books.html">Discover Books</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <section class="hero-panel">
+        <div>
+          <div class="eyebrow">AI Arts</div>
+          <h1>Dreamlight</h1>
+          <p class="hero-subtitle">
+            An AI art project exploring how dreams can be translated into cinematic
+            visual experiences without losing their emotional ambiguity, symbolic
+            depth, or surreal internal logic.
+          </p>
+        </div>
+        <div class="hero-note">
+          Where dreams stay—and softly become real.
+        </div>
+      </section>
+
+      <section class="hero-panel">
+        <div class="eyebrow">Core Idea</div>
+        <div class="hero-quote">
+          Dreamlight transforms dreams into cinematic visuals—capturing not what
+          we see, but what we feel.
+        </div>
+      </section>
+    </div>
+
+    <div class="section-title">Featured Work</div>
+
+    <div class="grid">
+      <section class="card">
+        <div class="label">AI Art · Dream Interpretation · Visual Narrative</div>
+        <h2>🌙 Dreamlight</h2>
+        <p>
+          Dreamlight is an AI-driven artistic project that transforms human dreams
+          into cinematic experiences. A dream may begin as something fleeting,
+          abstract, fragmented, or emotionally charged; the system reimagines it
+          as a visual narrative shaped by mood, atmosphere, symbolism, and felt
+          memory rather than literal description.
+        </p>
+        <p>
+          This is not just generation. It is interpretation. The project treats a
+          dream as an internal world with its own visual grammar: colors that do
+          not exist, spaces that do not obey physics, and emotions that resist
+          direct language. The goal is not to reconstruct what happened in a dream,
+          but to reconstruct how the dream lived in the mind.
+        </p>
+        <p>
+          Dreamlight asks a simple but powerful question: what if inner worlds
+          could be seen, shared, and experienced? By blending generative AI,
+          storytelling, and visual design, the project turns dreams into living
+          scenes—not as they were, but as they felt.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="label">Scientific Motivation</div>
+        <div class="statement">
+          Dreamlight is also a research question disguised as an art project.
+        </div>
+        <p>
+          Dreams are compositional, symbolic, emotionally saturated, and often
+          non-linear. That makes them a compelling test case for generative models
+          that must represent ambiguity, hidden structure, memory fragments, and
+          subjective perception. In that sense, Dreamlight draws on ideas from
+          cognitive science, latent representation learning, multimodal generation,
+          and human-centered interpretation.
+        </p>
+        <div class="mini-block">
+          <div class="label">Why It Matters</div>
+          <p>
+            The project explores how AI can model not only external reality but
+            internal experience—how systems might encode emotion, memory, and
+            imagination in ways that are expressive, interpretable, and visually
+            coherent.
+          </p>
+        </div>
+        <div class="mini-block">
+          <div class="label">Positioning</div>
+          <p>
+            Dreamlight sits at the intersection of generative AI, artistic
+            storytelling, cognitive representation, and speculative interface
+            design, making it both a creative work and a conceptual research
+            inquiry.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-note">New York City · San Francisco</div>
+  </div>
+</body>
+</html>
